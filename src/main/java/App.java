@@ -7,8 +7,9 @@ public class App {
     }
 
     public static void main(String[] args) {
-
-
-        System.out.println(new App().getGreeting());
+        iPhone iPhone = new iPhone("iphonX", "white", "iPhone");
+        iPhone.callMessage("I'm working");
+        Android android = new Android("nova3", "white", "Huawei");
+        android.callMessage("I'm breaking");
     }
 }
