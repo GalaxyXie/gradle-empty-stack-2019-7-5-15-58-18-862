@@ -12,28 +12,26 @@ public class Phone {
    public void callMessage(String message){
       System.out.println("Message:["+message+"]");
    }
+   public void printMessage(){
+      System.out.println(this.toString());
+   }
 
    public String getName() {
       return name;
-   }
-
-   public void setName(String name) {
-      this.name = name;
    }
 
    public String getColor() {
       return color;
    }
 
-   public void setColor(String color) {
-      this.color = color;
-   }
-
    public String getBrand() {
       return brand;
    }
 
-   public void setBrand(String brand) {
-      this.brand = brand;
+   @Override
+   public String toString() {
+      return "name:[" + name + "]," +
+              "color:[" + color + "]," +
+              "brand:[" + brand + "]" ;
    }
 }

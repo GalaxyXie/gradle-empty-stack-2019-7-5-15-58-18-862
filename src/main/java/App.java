@@ -11,5 +11,8 @@ public class App {
         iPhone.callMessage("I'm working");
         Android android = new Android("nova3", "white", "Huawei");
         android.callMessage("I'm breaking");
+        iPhone.printMessage();
+        Custom custom=new Custom("Laura",iPhone);
+        custom.setPhone(android);
     }
 }
